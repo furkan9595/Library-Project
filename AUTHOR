@@ -1,12 +1,12 @@
 CREATE TABLE [dbo].[AUTHORS](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
-	[IMAGE] [image] NULL,
-	[NAME] [nvarchar](50) NULL,
-	[SURNAME] [nvarchar](50) NULL,
-	[COUNTRY] [nvarchar](50) NULL,
-	[BIOGRAPY] [text] NULL,
-	[BIRTDATE] [date] NULL,
-	[DATEOF_DEATH] [date] NULL,
-	[BIRTPLACE] [nvarchar](50) NULL,
-	[EXPLAIN] [text] NULL,
- CONSTRAINT [LIBRARY_USER_BOOKS] PRIMARY KEY CLUSTERED 
+	[IMAGE] [image] NOT NULL,
+	[NAME] [nvarchar](50) NOT NULL,
+	[SURNAME] [nvarchar](50) NOT NULL,
+	[COUNTRY] [nvarchar](50) NOT NULL,
+	[BIOGRAPHY] [text] NOT NULL,
+	[BIRTDATE] [date] NOT NULL,
+	[DATEOF_DEATH] [date] NOT NULL,
+	[BIRTHPLACE] [nvarchar](50) NOT NULL,
+	[EXPLAIN] [text] NOT NULL,
+ CONSTRAINT [PK_AUTHORS] PRIMARY KEY CLUSTERED
