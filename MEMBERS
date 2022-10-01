@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[MEMBERS](
+	[ID] [int] NOT NULL,
+	[IMAGE] [image] NOT NULL,
+	[NAME] [nvarchar](50) NOT NULL,
+	[SURNAME] [nvarchar](50) NOT NULL,
+	[BIRTDATE] [date] NOT NULL,
+	[IDENTIFICATION_NUMBER] [nvarchar](50) NOT NULL,
+	[E-MAIL] [nvarchar](30) NOT NULL,
+	[PHONE] [nvarchar](30) NOT NULL,
+	[BOOK_ID] [int] NOT NULL,
+	[CITY] [nvarchar](50) NOT NULL,
+	[DISTRICT] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_MEMBERS] PRIMARY KEY CLUSTERED 
